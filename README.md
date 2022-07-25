@@ -70,6 +70,19 @@ Project structure
 --service - interface and implementation class,,, the interface implements repository,,, implementation implements the interface
 --model - represent the db entities.
 
+Queries
+---------
+Use repository - crudRepository, JpaRepository, JpaPagingAndSortingRepository.
+JPQL queries - either directly or on the entity by use of NamedQuery.
+Use native query - either through @Query or @NamedNativeQuery
+
+Relationships.
+------------------
+OneToOne, JoinColumn
+OneToMany,,, used mapped_by for bidirections
+ManyToOne
+ManyToMany
+
 
 
 
