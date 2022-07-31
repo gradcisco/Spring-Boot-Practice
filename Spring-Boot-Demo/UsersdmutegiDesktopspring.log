@@ -1,0 +1,23 @@
+2022-07-31 10:48:35.841 DEBUG 20944 --- [http-nio-8087-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2", parameters={}
+2022-07-31 10:48:35.844 DEBUG 20944 --- [http-nio-8087-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]]
+2022-07-31 10:48:35.847 DEBUG 20944 --- [http-nio-8087-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-31 10:48:35.904 DEBUG 20944 --- [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-regular.woff2", parameters={}
+2022-07-31 10:48:35.906 DEBUG 20944 --- [http-nio-8087-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]]
+2022-07-31 10:48:35.910 DEBUG 20944 --- [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-31 10:48:49.117 DEBUG 20944 --- [http-nio-8087-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/employees", parameters={}
+2022-07-31 10:48:49.118 DEBUG 20944 --- [http-nio-8087-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.somi.springbootdemo.controller.EmployeeController#saveEmployee(Employee)
+2022-07-31 10:48:49.152 DEBUG 20944 --- [http-nio-8087-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Employee(id=0, name=string, age=0, email=string)]
+2022-07-31 10:48:49.158  INFO 20944 --- [http-nio-8087-exec-8] c.s.s.controller.EmployeeController      : Employee(id=0, name=string, age=0, email=string)Saved successfully
+2022-07-31 10:48:49.204 DEBUG 20944 --- [http-nio-8087-exec-8] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.email as email3_0_0_, employee0_.name as name4_0_0_ from tbl_employee employee0_ where employee0_.id=?
+2022-07-31 10:48:49.247 DEBUG 20944 --- [http-nio-8087-exec-8] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2022-07-31 10:48:49.250 DEBUG 20944 --- [http-nio-8087-exec-8] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2022-07-31 10:48:49.279 DEBUG 20944 --- [http-nio-8087-exec-8] org.hibernate.SQL                        : insert into tbl_employee (age, email, name, id) values (?, ?, ?, ?)
+2022-07-31 10:48:49.290 DEBUG 20944 --- [http-nio-8087-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-07-31 10:48:49.290 DEBUG 20944 --- [http-nio-8087-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-07-31 10:48:49.290 DEBUG 20944 --- [http-nio-8087-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-31 10:51:11.135 DEBUG 20944 --- [SpringApplicationShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2022-07-31 10:51:11.135 DEBUG 20944 --- [SpringApplicationShutdownHook] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e3c657e, started on Sun Jul 31 10:43:36 EAT 2022
+2022-07-31 10:51:11.135 DEBUG 20944 --- [SpringApplicationShutdownHook] ySourcesPropertyResolver$DefaultResolver : Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2022-07-31 10:51:11.165  INFO 20944 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-31 10:51:11.170  INFO 20944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-31 10:51:11.177  INFO 20944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
